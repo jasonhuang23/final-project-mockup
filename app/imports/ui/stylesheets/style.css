@@ -1,1 +1,9 @@
-<!-- Cannot change body padding here due to landing page. -->
+.ui.top.fixed.borderless.menu{
+  background-color: #024731;
+  color: white;
+}
+
+a.item{
+  color: white;
+}
+
