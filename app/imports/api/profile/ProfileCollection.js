@@ -23,7 +23,7 @@ class ProfileCollection extends BaseCollection {
       // Remainder are optional
       firstName: { type: String, optional: true },
       lastName: { type: String, optional: true },
-      bio: { type: String, optional: true },
+      specifics: { type: String, optional: true },
       interests: { type: Array, optional: true },
       'interests.$': { type: String },
       title: { type: String, optional: true },
@@ -57,12 +57,12 @@ class ProfileCollection extends BaseCollection {
    * if one or more interests are not defined, or if github, facebook, and instagram are not URLs.
    * @returns The newly created docID.
    */
-  define({ firstName = '', lastName = '', username, bio = '', interests = [], picture = '', title = '', github = '',
+  define({ firstName = '', lastName = '', username, specifics = '', interests = [], picture = '', title = '', github = '',
       facebook = '', instagram = '', location = '' }) {
     // make sure required fields are OK.
-    const checkPattern = { firstName: String, lastName: String, username: String, bio: String, picture: String,
+    const checkPattern = { firstName: String, lastName: String, username: String, specifics: String, picture: String,
       title: String, location: String };
-    check({ firstName, lastName, username, bio, picture, title, location }, checkPattern);
+    check({ firstName, lastName, username, specifics, picture, title, location }, checkPattern);
 
     if (this.find({ username }).count() > 0) {
       throw new Meteor.Error(`${username} is previously defined in another Profile`);
@@ -76,7 +76,7 @@ class ProfileCollection extends BaseCollection {
       throw new Meteor.Error(`${interests} contains duplicates`);
     }
 
-    return this._collection.insert({ firstName, lastName, username, bio, interests, picture, title, github,
+    return this._collection.insert({ firstName, lastName, username, specifics, interests, picture, title, github,
       facebook, instagram, location });
   }
 
@@ -90,7 +90,7 @@ class ProfileCollection extends BaseCollection {
     const firstName = doc.firstName;
     const lastName = doc.lastName;
     const username = doc.username;
-    const bio = doc.bio;
+    const specifics = doc.specifics;
     const interests = doc.interests;
     const picture = doc.picture;
     const title = doc.title;
@@ -98,7 +98,7 @@ class ProfileCollection extends BaseCollection {
     const github = doc.github;
     const facebook = doc.facebook;
     const instagram = doc.instagram;
-    return { firstName, lastName, username, bio, interests, picture, title, github, facebook, instagram, location };
+    return { firstName, lastName, username, interests, picture, title, github, facebook, instagram, location, specifics };
   }
 }
 

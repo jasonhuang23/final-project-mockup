@@ -53,11 +53,11 @@ Template.Profile_Page.events({
     const github = event.target.Github.value;
     const facebook = event.target.Facebook.value;
     const instagram = event.target.Instagram.value;
-    const bio = event.target.Bio.value;
+    const specifics = event.target.Specifics.value;
     const selectedInterests = _.filter(event.target.Interests.selectedOptions, (option) => option.selected);
     const interests = _.map(selectedInterests, (option) => option.value);
 
-    const updatedProfileData = { firstName, lastName, title, picture, github, facebook, instagram, bio, interests,
+    const updatedProfileData = { firstName, lastName, title, picture, github, facebook, instagram, specifics, interests,
       username, location };
 
     // Clear out any old validation errors.
