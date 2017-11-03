@@ -2,12 +2,16 @@
 # final-project-mockup
 
 
- 
  # Landing page
  ![landing](/app/public/images/landing-screenshot(1).png)
-<<<<<<< HEAD
-=======
-  ![landing](/app/public/images/landing-screenshot.png)
 
->>>>>>> b1e511ac55d1c2199ac544fc71f76d7da9242d83
+ ![landing](/app/public/images/landing-screenshot.png)
  
+ # Profile page
+ ![profile](/app/public/images/profile-page-screenshot.png)
+ 
+ # Calendar page
+  ![calendar](/app/public/images/calendar-screenshot.png)
+
+ # Create Session Page
+  ![createsession](/app/public/images/create-page-screenshot.png)
