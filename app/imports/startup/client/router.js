@@ -68,6 +68,20 @@ userRoutes.route('/filter', {
   },
 });
 
+export const calendarPageRouteName = 'Calendar_Page';
+userRoutes.route('/calendar', {
+  name: calendarPageRouteName,
+  action() {
+    BlazeLayout.render('User_Layout', { main: calendarPageRouteName });
+  },
+});
+export const createPageRouteName = 'Create_Page';
+userRoutes.route('/create-page', {
+  name: createPageRouteName,
+  action() {
+    BlazeLayout.render('User_Layout', { main: createPageRouteName });
+  },
+});
 /*                        MISC ROUTES                       */
 FlowRouter.notFound = {
   action() {

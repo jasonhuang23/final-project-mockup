@@ -1,9 +1,12 @@
 .ui.top.fixed.borderless.menu{
-  background-color: #024731;
+  background-color: white;
   color: white;
 }
 
-a.item{
+item{
   color: white;
 }
 
+#profile-page{
+  background-color: orange;
+}

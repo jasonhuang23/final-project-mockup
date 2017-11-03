@@ -1,11 +1,11 @@
-<template name="Profile_Page">
+<template name="Create_Page">
 
   {{#if Template.subscriptionsReady}}
   <body style="background-color:  #024731">
 
   <div class="ui text container segment" style="margin-top: 20px; margin-bottom: 20px">
     <div class="ui dividing header">
-      Profile
+      Create Study Session
     </div>
     <form class="ui equal width form profile-data-form {{ successClass }} {{ errorClass }}">
 
@@ -17,8 +17,6 @@
 
       <div class="field">
         {{> Text_Form_Control label="Title" placeholder="Student" value=profile.title errorMessage=(fieldError "title")}}
-        {{> Text_Form_Control label="Location" placeholder="Location" value=profile.location errorMessage=(fieldError "location")}}
-        {{> Text_Form_Control label="Picture" placeholder="http://foo.com/shot.jpg" value=profile.picture errorMessage=(fieldError "picture")}}
       </div>
 
       <div class="field">
@@ -28,12 +26,11 @@
       <div class="fields">
 
         {{> Social_Network_Form_Control label="Github" icon="github" placeholder="pmjohnson" value=profile.github errorMessage=(fieldError "github")}}
-        {{> Social_Network_Form_Control label="Facebook" icon="facebook" placeholder="pmjohnson" value=profile.facebook errorMessage=(fieldError "facebook")}}
-        {{> Social_Network_Form_Control label="Instagram" icon="instagram" placeholder="pmjohnson" value=profile.instagram errorMessage=(fieldError "instagram")}}
+        {{> Social_Network_Form_Control label="Email" icon="email" placeholder="johnson@hawaii.edu" value=profile.github errorMessage=(fieldError "github")}}
 
       </div>
 
-      {{> TextArea_Form_Control label="Specifics" value=profile.specifics placeholder="What do you need help in?" errorMessage=(fieldError "specifics")}}
+      {{> TextArea_Form_Control label="Availability" value=profile.specifics placeholder="When are you available?" errorMessage=(fieldError "specifics")}}
 
 
       <button class="ui primary button" type="submit">Submit</button>

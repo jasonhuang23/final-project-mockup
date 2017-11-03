@@ -86,14 +86,14 @@
       "name": "ProfileCollection",
       "contents": [
         {
-          "firstName": "Lee",
+          "firstName": "Bee",
           "lastName": "Altenberg",
           "username": "altenber",
-          "Specifics": "I am an Associate Professor of Information and Computer Sciences at the University of Hawaii.",
+          "Specifics": "I need help on project for ICS 212",
           "interests": [
-            "Evolutionary Computation"
+            "ICS 212"
           ],
-          "title": "Associate Professor, Information and Computer Sciences",
+          "title": "Sophmore CS Student",
           "location": "Honolulu, HI",
           "picture": "/images/altenberg.jpg"
         },
@@ -101,11 +101,11 @@
           "firstName": "Kyungim",
           "lastName": "Baek",
           "username": "baek",
-          "Specifics": "I am an Associate Professor of Information and Computer Sciences at the University of Hawaii.",
+          "Specifics": "Struggling in ICS 311, Algorithms is a pain in the...",
           "interests": [
-            "Computer Vision"
+            "ICS 311"
           ],
-          "title": "Associate Professor, Information and Computer Sciences",
+          "title": "Junior CS Student",
           "location": "Honolulu, HI",
           "picture": "/images/baek.jpg"
         },
@@ -113,10 +113,9 @@
           "firstName": "Edo",
           "lastName": "Biagioni",
           "username": "esb",
-          "Specifics": "I am an Associate Professor of Information and Computer Sciences at the University of Hawaii.",
+          "Specifics": "ICS 111 help needed, any help is appreciated, thank you.",
           "interests": [
-            "Mobile Networks",
-            "Sailing"
+            "ICS 111";
           ],
           "title": "Associate Professor, Information and Computer Sciences",
           "picture": "/images/biagioni.jpg"
@@ -132,6 +131,19 @@
           ],
           "title": "Associate Professor, Information and Computer Sciences",
           "picture": "/images/binsted.jpg"
+        },
+        {
+          "firstName": "Bob",
+          "lastName": "James",
+          "username": "henric",
+          "github": "henricasanova",
+          "specifics": "I am a Professor of Information and Computer Sciences at the University of Hawaii.",
+          "interests": [
+            "Surfing",
+            "Photography"
+          ],
+          "title": "Professor, Information and Computer Sciences",
+          "picture": "/images/casanova.jpg"
         },
         {
           "firstName": "Henri",
